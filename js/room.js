@@ -61,7 +61,7 @@ $(document).ready(function(){
         success: function(resp){
             var regEx = /^[a-zA-Z0-9\?\.\!\'\" ]{1,40}$/;
             var msg = document.getElementById("msg");
-            console.log(resp);
+            console.log("Room crap: "+resp);
             
             document.getElementById("status").innerHTML = "You are in room "+resp.roomID+": "+resp.roomName;
             
