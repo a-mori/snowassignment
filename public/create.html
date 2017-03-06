@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topics</title>
+        
+        <link href="/css/createT.css" type="text/css" rel="stylesheet"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <button id="home">Home</button>
+        <div class="container-fluid">
+            <input id="topic" class="col-lg-4 col-md-4 col-sm-10 col-xs-10" placeholder="Topic Name" type="text"/>
+            <input id="description" class="col-md-4 col-lg-4 col-sm-10 col-xs-10" placeholder="Description" type="text"/>
+            <button id="createTopic" class="col-md-2 col-lg-2 col-sm-10 col-xs-10">Create Topic</button>
+            <select id="dropDown" class="col-md-3 col-lg-3 col-sm-10 col-xs-10">
+                <option>Help</option>
+                <option>Opinions</option>
+                <option>Questions</option>
+                <option>Custom</option>
+            </select>
+            <input id="cus" placeholder="Enter Custom URL Here" type="text" class="col-md-4 col-lg-4 col-sm-10 col-xs-10"/>
+        </div>
+        <div id="display" class="container-fluid">
+        </div>
+        <script src="/scripts/createbundle.js"></script>
+    </body>
+</html>

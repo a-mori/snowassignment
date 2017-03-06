@@ -1,0 +1,126 @@
+body {
+    background-image: url(https://i.ytimg.com/vi/OtdJloicDR0/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(100,100,100);
+}
+
+#login {
+    display: none;
+    border-radius: 20%;
+    background-color: rgb(50,50,50);
+    color: burlywood;
+    height: 7vh;
+    width: 10vw;
+    font-size: 130%;
+    margin: 2%;
+    border: 2px solid rgb(50,50,50);
+}
+
+#login:hover {
+    background-color: black;
+    border-style: inset;
+}
+
+#password {
+    margin: 2%;
+    display: none;
+    background-color: rgb(50,50,50);
+    border: 2px solid grey;
+    height: 5vh;
+    width: 20vw;
+    color: white;
+}
+
+#password:hover {
+    background-color: black;
+}
+
+#userName {
+    margin: 2%;
+    display: none;
+    background-color: rgb(50,50,50);
+    border: 2px solid grey;
+    height: 5vh;
+    width: 20vw;
+    color: white;
+}
+
+#userName:hover {
+    background-color: black;
+}
+
+#holder {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#signIn {
+    margin: 2%;
+    border-radius: 20%;
+    height: 7vh;
+    width: 10vw;
+    color: burlywood;
+    background-color: rgb(50,50,50);
+    font-size: 130%;
+    border: 2px solid rgb(50,50,50);
+}
+
+#signIn:hover {
+    background-color: black;
+    border-style: inset;
+}
+
+#title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: 40vh;
+}
+
+#label {
+    background-image: url(https://i1.wp.com/orig13.deviantart.net/94aa/f/2015/180/d/4/fallout_logo_render_by_thejackmoriarty-d8vwdko.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#create {
+    background-color: rgb(50,50,50);
+    margin-top: 4%;
+    height: 10vh;
+    width: 20vw;
+    font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: burlywood;
+    border: 2px solid rgb(50,50,50);
+    border-radius: 20%;
+}
+
+#create:hover {
+    background-color: rgb(10,10,10);
+    border-style: inset;
+}
+
+#profile {
+    background-color: rgb(50,50,50);
+    margin-top: 4%;
+    height: 10vh;
+    width: 20vw;
+    font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: burlywood;
+    border: 2px solid rgb(50,50,50);
+    border-radius: 20%;
+}
+
+#profile:hover {
+    background-color: rgb(10,10,10);
+    border-style: inset;
+}

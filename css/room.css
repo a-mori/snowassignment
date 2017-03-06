@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-image: url(https://images.alphacoders.com/556/thumb-1920-556927.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#status {
+    height: 5vh;
+    color: white;
+    background-color: rgba(10,10,10,0.1);
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 150%;
+}
+
+.stuff {
+    background-image: url(http://vignette4.wikia.nocookie.net/destinypedia/images/b/b9/Unknown_License.png/revision/latest?cb=20130810221651);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 15vh;
+    margin-top: 2%;
+    background-color: rgb(150,150,150);
+}
+
+.ndiv {
+    height: 15vh;
+    margin-top: 2%;
+    margin-right: 2%;
+    color: rgb(50,50,50);
+    font-size: 150%;
+    font-family: monospace;
+    vertical-align: middle;
+    line-height: 15vh;
+    background-color: rgb(150,150,150);
+}
+
+#display {
+    background-color: rgba(50,50,50,0.7);
+    height: 75%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+}
+
+#display::-webkit-scrollbar {
+    width: 1em;
+}
+
+#display::-webkit-scrollbar-thumb {
+    background-color: rgb(100,100,100);
+}
+
+#display::-webkit-scrollbar-corner {
+    background-color: rgba(50,50,50,0.7);
+}
+
+#msg {
+    margin: 2%;
+    background-color: rgb(80,80,80);
+    z-index: 2;
+    color: white;
+    border: 2px solid grey;
+    width: 30%;
+    height: 40%;
+}
+
+#msg:hover {
+    background-color: black;
+    border-color: black;
+}
+
+#sendMsg {
+    z-index: 2;
+    border: 2px solid grey;
+    background-color: rgb(80,80,80);
+    bottom: 0;
+    margin: 2%;
+    height: 40%;
+    width: 10%;
+    color: white;
+    border-radius: 20%;
+}
+
+#back {
+    z-index: 2;
+    border: 2px solid grey;
+    background-color: rgb(80,80,80);
+    bottom: 0;
+    margin: 2%;
+    height: 40%;
+    width: 10%;
+    color: white;
+    border-radius: 20%;
+}
+
+#back:hover {
+    background-color: black;
+    border-style: inset;
+}
+
+#sendMsg:hover {
+    background-color: black;
+    border-style: inset;
+}
+
+#bar {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(100,100,100,0.5);
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+}

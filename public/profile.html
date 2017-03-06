@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Profile</title>
+        
+        <link href="/css/profile.css" type="text/css" rel="stylesheet"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <button id="home">Home</button>
+        <div id="holder" align="center">
+        <button id="createUser">Create User</button>
+        <input id="password" type="password" placeholder="Please Enter a Password"/>
+        <button id="create">Create</button>
+        </div>
+        <div id="display">
+            <div id="picDisplay"></div>
+            <input id="username" placeholder="Username" type="text"/>
+            <input id="pic" placeholder="User Picture" type="text"/>
+            <label class="names" align="center"><input type="radio" name="gender" id="gender_Male" value="Male" checked>Male</label>
+            <label class="names" align="center"><input type="radio" name="gender" id="gender_Female" value="Female">Female</label>
+            <button id="update">Edit Profile</button>
+            <script src="/scripts/profilebundle.js"></script>
+        </div>
+    </body>
+</html>
