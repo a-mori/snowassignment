@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     var regEx = /^[a-zA-Z0-9\?\.\! ]{1,70}$/;
-    var regEx2 = /^[a-zA-Z0-9_\.\/\-\:]{0,150}$/;
+    var regEx2 = /^[a-zA-Z0-9_\.\/\-\:]{0,500}$/;
     
     var topic = document.getElementById("topic");
     var dropDown = document.getElementById("dropDown");

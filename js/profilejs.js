@@ -2,7 +2,7 @@ $(document).ready(function() {
     
     var gender = "";
     var regEx = /^[a-zA-Z0-9_]{3,25}$/;
-    var regEx2 = /^[a-zA-Z0-9_\.\/\-\:]{1,150}$/;
+    var regEx2 = /^[a-zA-Z0-9_\.\/\-\:]{1,500}$/;
     var uN = document.getElementById("username");
     var pV = document.getElementById("pic");
     var male = document.getElementById("gender_Male");
