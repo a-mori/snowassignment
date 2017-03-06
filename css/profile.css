@@ -35,6 +35,11 @@ body::-webkit-scrollbar-corner {
     font-size: 130%;
 }
 
+#createUser:hover {
+    background-color: black;
+    border-style: inset;
+}
+
 #create {
     margin: 2%;
     display: none;
@@ -47,6 +52,11 @@ body::-webkit-scrollbar-corner {
     font-size: 130%;
 }
 
+#create:hover {
+    background-color: black;
+    border-style: inset;
+}
+
 #password {
     margin: 2%;
     display: none;
@@ -55,6 +65,11 @@ body::-webkit-scrollbar-corner {
     color: white;
     height: 6vh;
     width: 20vw;
+}
+
+#password:hover {
+    background-color: black;
+    border-style: inset;
 }
 
 #username {
