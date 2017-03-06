@@ -16,6 +16,7 @@ var io = require("socket.io")(server);
 
 app.use("/scripts", express.static("build"));
 app.use("/css", express.static("css"));
+app.use("/pictures", express.static("pictures"));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
