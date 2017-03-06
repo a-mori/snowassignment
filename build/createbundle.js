@@ -10300,7 +10300,7 @@ return jQuery;
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function(){
     
     var regEx = /^[a-zA-Z0-9\?\.\! ]{1,70}$/;
-    var regEx2 = /^[a-zA-Z0-9_\.\/\-\:]{0,80}$/;
+    var regEx2 = /^[a-zA-Z0-9_\.\/\-\:]{0,500}$/;
     
     var topic = document.getElementById("topic");
     var dropDown = document.getElementById("dropDown");

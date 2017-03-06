@@ -10361,7 +10361,7 @@ $(document).ready(function(){
         url: "/room/roomID",
         type: "post",
         success: function(resp){
-            var regEx = /^[a-zA-Z0-9\?\.\! ]{1,40}$/;
+            var regEx = /^[a-zA-Z0-9\?\.\!\' ]{1,40}$/;
             var msg = document.getElementById("msg");
             console.log(resp);
             
