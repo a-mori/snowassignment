@@ -10324,15 +10324,6 @@ return jQuery;
     });
 
     document.getElementById("login").addEventListener("click", function() {
-        var regEx = /^[a-zA-Z0-9_\.\/\\\-\:\;\'\" ]{1,}$/;
-        
-        document.getElementById("password").onkeyup = function() {
-            if (regEx.test(document.getElementById("password").value) == true) {
-                document.getElementById("login").style.display = "none";
-            } else {
-                document.getElementById("login").style.display = "inline";
-            }
-        }
         
         document.getElementById("userName").onkeyup = function() {
             if (regEx.test(document.getElementById("userName").value) == true) {

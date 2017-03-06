@@ -10304,7 +10304,6 @@ return jQuery;
     var gender = "";
     var regEx = /^[a-zA-Z0-9_]{3,25}$/;
     var regEx2 = /^[a-zA-Z0-9_\.\/\-\:]{1,500}$/;
-    var regExP = /^[a-zA-Z0-9_\.\/\\\-\:\;\'\" ]{1,}$/;
     var uN = document.getElementById("username");
     var pV = document.getElementById("pic");
     var male = document.getElementById("gender_Male");
@@ -10328,17 +10327,6 @@ return jQuery;
         } else {
             document.getElementById("update").style.display = "none";
             document.getElementById("createUser").style.display = "none";
-        }
-    }
-    
-    document.getElementById("password").onkeyup = function() {
-        if (regExP.test(document.getElementById("password").value) == true) {
-            document.getElementById("createUser").style.display = "none";
-            document.getElementById("createUser").style.display = "none";
-            alert("Nice try, don't try to hack this site!!!");
-        } else {
-            document.getElementById("createUser").style.display = "inline";
-            document.getElementById("createUser").style.display = "inline";
         }
     }
     
