@@ -21,7 +21,6 @@ $(document).ready(function(){
             if(resp.status == "success"){
                 
                 var rooms = resp.arr;
-                console.log(rooms);
                 
                 for(var i = 0; i < rooms.length; i++){                   
                     
@@ -108,7 +107,7 @@ $(document).ready(function(){
 
         if (dropDown.value == "Custom") {
             picValue = "url("+customInput.value+")";
-            console.log("Custom", customInput.value, " PicValue: "+picValue);
+            console.log("Custom");
         }
         
         $.ajax({
@@ -121,7 +120,6 @@ $(document).ready(function(){
                 type: "create"
             },
             success: function(resp){
-                console.log(resp);
                 
                 if(resp.status == "success"){
                     var ndiv = document.createElement("div");

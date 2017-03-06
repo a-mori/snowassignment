@@ -61,7 +61,6 @@ $(document).ready(function(){
         success: function(resp){
             var regEx = /^[a-zA-Z0-9\?\.\!\'\" ]{1,40}$/;
             var msg = document.getElementById("msg");
-            console.log("Room crap: "+resp);
             
             document.getElementById("status").innerHTML = "You are in room "+resp.roomID+": "+resp.roomName;
             
@@ -98,7 +97,6 @@ function initSockets(roomID, user=null){
     });
 
     socket.on("create message", function(obj){
-        console.log("What is sent:"+JSON.stringify(obj));
 
         var d = document.createElement("div");
         var imgDiv = document.createElement("div");

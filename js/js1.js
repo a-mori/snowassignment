@@ -7,7 +7,6 @@ $(document).ready(function(){
                 type: "read"
             },
             success: function(resp){
-                console.log(resp);
                 
                 if (resp.status == "success") {
                     location.href = "/create";
@@ -69,7 +68,6 @@ $(document).ready(function(){
                 type: "read"
             },
             success: function(resp){
-                console.log(resp);
                 
                 if (resp.status == "success") {
                     location.href = "/edit";
