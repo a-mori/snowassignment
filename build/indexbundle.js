@@ -10307,7 +10307,6 @@ return jQuery;
                 type: "read"
             },
             success: function(resp){
-                console.log(resp);
                 
                 if (resp.status == "success") {
                     location.href = "/create";
@@ -10369,7 +10368,6 @@ return jQuery;
                 type: "read"
             },
             success: function(resp){
-                console.log(resp);
                 
                 if (resp.status == "success") {
                     location.href = "/edit";

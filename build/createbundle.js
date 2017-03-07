@@ -10310,7 +10310,7 @@ return jQuery;
     var picValue = "";
     
     $.ajax({
-        url: "createStuff",
+        url: "/createStuff",
         type: "post",
         data: {
             type: "read"
@@ -10320,7 +10320,6 @@ return jQuery;
             if(resp.status == "success"){
                 
                 var rooms = resp.arr;
-                console.log(rooms);
                 
                 for(var i = 0; i < rooms.length; i++){                   
                     
@@ -10407,7 +10406,7 @@ return jQuery;
 
         if (dropDown.value == "Custom") {
             picValue = "url("+customInput.value+")";
-            console.log("Custom", customInput.value, " PicValue: "+picValue);
+            console.log("Custom");
         }
         
         $.ajax({
@@ -10420,7 +10419,6 @@ return jQuery;
                 type: "create"
             },
             success: function(resp){
-                console.log(resp);
                 
                 if(resp.status == "success"){
                     var ndiv = document.createElement("div");

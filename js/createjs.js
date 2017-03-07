@@ -11,7 +11,7 @@ $(document).ready(function(){
     var picValue = "";
     
     $.ajax({
-        url: "createStuff",
+        url: "/createStuff",
         type: "post",
         data: {
             type: "read"

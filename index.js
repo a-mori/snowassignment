@@ -13,6 +13,9 @@ var savedUsers = [];
 
 const server = require("http").createServer(app);
 var io = require("socket.io")(server);
+var regEx = /^[a-zA-Z0-9\?\.\!\'\" ]{1,40}$/;
+var regEx2 = /^[a-zA-Z0-9\?\.\! ]{1,70}$/;
+var regEx3 = /^[a-zA-Z0-9_\.\/\-\:]{0,500}$/;
 
 app.use("/scripts", express.static("build"));
 app.use("/css", express.static("css"));
@@ -99,10 +102,23 @@ app.get("/create", function(req, resp){
 
 app.post("/createStuff", function(req, resp){
     if (req.body.type == "create") {
+        
         var roomStuff = {
             room: req.body.room,
             desc: req.body.desc,
             img: req.body.pic
+        }
+        
+        if (regEx2.test(roomStuff.room) == false) {
+            roomStuff.room = "Nice try";
+        }
+        
+        if (regEx3.test(roomStuff.desc) == false) {
+            roomStuff.desc = "Whaaaat?!?!? I actually did something smart!?!?!";
+        }
+        
+        if (regEx3.test(roomStuff.img) == false) {
+            roomStuff.img = "http://placebear.com/200/200";
         }
         
         req.session.name = roomStuff.room;
@@ -143,7 +159,17 @@ io.on("connection", function(socket){
     
     socket.on("send message", function(obj){
         var newObj = {
-            obj: obj,
+            haha: obj.haha,
+            room: obj.room,
+            user: obj.user
+        }
+        
+        if (regEx.test(obj.haha) == false) {
+            newObj.haha = "STOOOOOP IT!!!!";
+        }
+        
+        var newObj = {
+            obj: newObj,
             userArr: users
         }
         
