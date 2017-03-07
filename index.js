@@ -117,10 +117,6 @@ app.post("/createStuff", function(req, resp){
             roomStuff.desc = "Whaaaat?!?!? I actually did something smart!?!?!";
         }
         
-        if (regEx3.test(roomStuff.img) == false) {
-            roomStuff.img = "http://placebear.com/200/200";
-        }
-        
         req.session.name = roomStuff.room;
         
         var comments = [];
